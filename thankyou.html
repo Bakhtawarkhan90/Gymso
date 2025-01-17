@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <style>
+        /* Body styling */
+        body {
+            background-image: url('https://images.unsplash.com/photo-1517508732953-43b0db0236ab');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center container */
+        .container {
+            margin-top: 10%;
+        }
+
+        /* Message box styling */
+        .thankyou-message {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .thankyou-message h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #ffd700; /* Golden color for the heading */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        .thankyou-message p {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        /* Grid for images */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /* Two images per row */
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .thankyou-image {
+            width: 85%; /* Ensures images fill the grid cell */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .thankyou-image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(255, 215, 0, 0.7);
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments for smaller devices */
+        @media (max-width: 1000px) {
+            .thankyou-message h1 {
+                font-size: 2.5rem;
+            }
+
+            .thankyou-message p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="thankyou-message">
+            <h1>Thank You!</h1>
+            <p>We have received your submission.</p>
+            <p>Your message has been recorded.</p>
+            <div class="image-gallery">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_5PNMuqBAmmbYfd0d2sz3V4fdeQ53ellFA&s" alt="Gym Workout" class="thankyou-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvc8PlYst5OOw9Y_Zzktsghe2mMT__nfSZg&s" alt="Gym Women" class="thankyou-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOq6YIskLrgm_VZaB6yQiMN0hLQqRamvay6Q&s" alt="Gym Girl" class="thankyou-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmydqvdQIobCFRmKHiiipIN-RV5TzOgAhr4Q&s" alt="Gym Men" class="thankyou-image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
